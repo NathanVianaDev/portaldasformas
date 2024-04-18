@@ -235,3 +235,17 @@ button{
 .calculo img{
   max-width: 30%;
 }
+
+@media(max-width: 768px){
+  .flex{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .flex2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+}

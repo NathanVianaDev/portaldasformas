@@ -38,25 +38,24 @@ function calcularTrapezoide(){
     var baseM = document.getElementById("input_trapB")
     var basem = document.getElementById("input_trapb")
     var alturaT = document.getElementById("input_trapa")
-    var baseMValue = baseM.value
-    var basemValue = basem.value
-    var alturaTValue = alturaT.value 
+    var baseMValue = parseFloat(baseM.value)
+    var basemValue = parseFloat(basem.value)
+    var alturaTValue = parseFloat(alturaT.value)
     var calculo = ((baseMValue + basemValue) * alturaTValue) / 2
     var resultado = document.getElementById("trap_rsl")
     return resultado.textContent = "O resultado é " + calculo
 }
 
-//function calcularPoligono(){
-    //var pp = document.getElementById("input_")
-    //var p = document.getElementById("input_")
-    //var alturaT = document.getElementById("input_")
-    //var baseMValue = baseM.value
-    //var basemValue = basem.value
-    //var alturaTValue = alturaT.value 
-    //var calculo = ((baseMValue + basemValue) * alturaTValue) / 2
-    //var resultado = document.getElementById("_rsl")
-    //return resultado.textContent = "O resultado é " + calculo
-//}
+function calcularPoligono(){
+    var ladoP = document.getElementById("input_polL")
+    var numlados = document.getElementById("input_polN")
+    var ladoPValue = ladoP.value
+    var numladosValue = numlados.value
+    var apotema = ladoPValue / (2 * Math.tan(Math.PI / numladosValue))
+    var calculo = (numladosValue * ladoPValue * apotema) / 2
+    var resultado = document.getElementById("pol_rsl")
+    return resultado.textContent = "O resultado é " + calculo
+}
 
 function calcularQuadrado(){
     var lado = document.getElementById("input_quad")

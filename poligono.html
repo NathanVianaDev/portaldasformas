@@ -40,13 +40,15 @@
             <img src="Assets/Images/Icons/poligono-de-n-lados-calculo.webp" alt="">
             <div class="resultado">
                 <h1>Poligono Regular de N Lados</h1>
-                <label for="input_">----------- : </label>
-                <input type="number" id="input_" required>              
+                <label for="input_">Digite o tamanho do lado: </label>
+                <input type="number" id="input_polL" required>
+                <label for="input_">Digite o número de lados: </label>
+                <input type="number" id="input_polN" required>              
             </div>
             <div class="botao">
-                <button type="btn_" onclick="calcularPoligono()">Calcular</button>
+                <button type="btn_pol" onclick="calcularPoligono()">Calcular</button>
             </div>
-            <h3 id="_rsl"></h3>
+            <h3 id="pol_rsl"></h3>
 
         </div>
     </main>
